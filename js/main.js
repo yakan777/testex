@@ -1,0 +1,17 @@
+const cvs=document.getElementById('cvs');
+const ctx=cvs.getContext('2d');
+[cvs.width,cvs.height]=[800,500];
+ctx.fillStyle='red';
+ctx.strokeStyle='#000';
+ctx.lineWith=4;
+ctx.beginPath();
+ctx.moveTo(300,200);
+ctx.lineTo(500,200);
+ctx.arc(500,250,50,-Math.PI/2,Math.PI/2);
+ctx.lineTo(300,300);
+ctx.arc(300,250,50,Math.PI/2,Math.PI/2*3);
+ctx.closePath();
+ctx.fill();
+ctx.fillStyle='yellow';
+ctx.fillRect(300,200,200,100);
+ctx.stroke();
